@@ -1,0 +1,130 @@
+{\rtf1\ansi\ansicpg1251\deff0\deflang1049{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil\fcharset1 Sylfaen;}}
+{\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\sa200\sl276\slmult1\lang9\f0\fs22 println("hi there")\par
+//Runs automatically. Just start typing.\par
+//See "About" for shortcuts\par
+class Letters \{\par
+    let georgianLetter =  ["\lang1079\f1\u4304?","\u4305?","\u4306?","\u4307?","\u4308?","\u4309?","\u4310?",\par
+                     "\u4311?","\u4312?","\u4313?","\u4314?","\u4315?","\u4316?","\u4317?",\par
+                     "\u4318?","\u4319?","\u4320?","\u4321?","\u4322?","\u4323?","\u4324?",\par
+                     "\u4325?","\u4326?","\u4327?","\u4328?","\u4329?","\u4330?","\u4331?",\par
+                     "\u4332?","\u4333?","\u4334?","\u4335?","\u4336?"]\par
+\par
+    let sound =         ["ah","buh","guh","duh","eh","vuh","zuh",\par
+                     "tuh (aspirated)","ee","kuh (unaspirated)","luh","muh",\par
+                     "nuh","oh","puh (unaspirated)","zhuh","ruh","suh",\par
+                     "tuh (unaspirated)","oo","puh (aspirated)",\par
+                     "kuh","rrr in the throat","guttural sound deep in the throat",\par
+                     "shuh","chuh","tsuh","dzuh",\par
+                     "tzuh","tchuh (unaspirated)","guttural sound in the throat",\par
+                     "juh","huh"]\par
+                     \par
+    let english =       ["a","b","g","d","e","v","z",\par
+                        "t","i","k","l","m","n","o",\par
+                        "p","zh","r","s","t","u","p",\par
+                        "q","French r","k","sh","ch",\par
+                        "ts","dz","tz","tch","kh","j","h"]\par
+                     \par
+    let PhoneticValue = ["wand","box","get","dog","hen","van; well","zebra",\par
+                     "ten","unique, meet","scan","let","mat","net","morning",\par
+                     "span","pleasure","rat; rolled","sit","Stan","moon","panda",\par
+                     "kitten","No English equivalent Vibrate the vocal chords",\par
+                     "No English equivalent","shut","church","hits","kudzu",\par
+                     "it\rquote s me (unaspirated)","matchbox","(final sound in) loch",\par
+                     "jackal","hare"] \par
+                     \par
+    func georgianLetterDiscription(letter: String) \{\par
+        \par
+        var m = -1\par
+        for var i = 0; i < georgianLetter.count; ++i \{\par
+            if(letter == georgianLetter[i])\{\par
+                m = i\par
+                break\par
+            \}\par
+        \}\par
+        println("Letter: \\(self.georgianLetter[m]). sound: \\(self.sound[m]). english: \\(self.english[m]).  PhoneticValue: \\(self.PhoneticValue[m]).")\par
+           \par
+   \}\par
+   func getGeorgianVowels() -> String\{\par
+       return "\u4304?, \u4312?, \u4308?, \u4317?, \u4323?"\par
+   \}\par
+    func getGeorgianConsonants() -> String\{\par
+       return "\u4305?, \u4306?, \u4307?, \u4309?, \u4310?, \u4311?, \u4313?, \u4314?, \u4315?, \u4316?, \u4318?, \u4319?, \u4320?, \u4321?, \u4322?, \u4324?, \u4325?, \u4326?, \u4327?, \u4328?, \u4329?, \u4330?, \u4331?, \u4332?, \u4333?, \u4334?, \u4335?, \u4336?" \par
+    \}\par
+    func georgianLettersCorrespondsEnglish(letter: String) \{\par
+        \par
+        var m = -1\par
+        for var i = 0; i < english.count; ++i \{\par
+            if(letter.lowercaseString == english[i].substringToIndex(advance(english[i].startIndex, 1)))\{\par
+                m = i\par
+                break\par
+            \}\par
+        \}\par
+        \par
+        var engLetter = ["a", "b","c","e","g","h","i","j","l","m","n","o","q","u","v"]\par
+        for t in engLetter\{\par
+            if(letter == t)\{\par
+                println("Letter: \\(self.georgianLetter[m]). sound: \\(self.sound[m]). english: \\(self.english[m]).  PhoneticValue: \\(self.PhoneticValue[m]).")\par
+            \}\par
+            \par
+        \}\par
+        println("\\(m)")\par
+        if(letter.lowercaseString == "d")\{\par
+            println("Letter: \\(self.georgianLetter[3]). sound: \\(self.sound[3]). english: \\(self.english[3]).  PhoneticValue: \\(self.PhoneticValue[3]).")\par
+            println("Letter: \\(self.georgianLetter[27]). sound: \\(self.sound[27]). english: \\(self.english[27]).  PhoneticValue: \\(self.PhoneticValue[27]).")\par
+        \}\par
+        if(letter.lowercaseString == "p")\{\par
+            println("Letter: \\(self.georgianLetter[14]). sound: \\(self.sound[14]). english: \\(self.english[14]).  PhoneticValue: \\(self.PhoneticValue[14]).")\par
+            println("Letter: \\(self.georgianLetter[20]). sound: \\(self.sound[20]). english: \\(self.english[20]).  PhoneticValue: \\(self.PhoneticValue[20]).")\par
+        \}\par
+        if(letter.lowercaseString == "r")\{\par
+            println("Letter: \\(self.georgianLetter[16]). sound: \\(self.sound[16]). english: \\(self.english[16]).  PhoneticValue: \\(self.PhoneticValue[16]).")\par
+            println("Letter: \\(self.georgianLetter[22]). sound: \\(self.sound[22]). english: \\(self.english[22]).  PhoneticValue: \\(self.PhoneticValue[22]).")\par
+        \}\par
+        if(letter.lowercaseString == "s")\{\par
+            println("Letter: \\(self.georgianLetter[17]). sound: \\(self.sound[17]). english: \\(self.english[17]).  PhoneticValue: \\(self.PhoneticValue[17]).")\par
+            println("Letter: \\(self.georgianLetter[24]). sound: \\(self.sound[24]). english: \\(self.english[24]).  PhoneticValue: \\(self.PhoneticValue[24]).")\par
+        \}\par
+        if(letter.lowercaseString == "z")\{\par
+            println("Letter: \\(self.georgianLetter[6]). sound: \\(self.sound[6]). english: \\(self.english[6]).  PhoneticValue: \\(self.PhoneticValue[6]).")\par
+            println("Letter: \\(self.georgianLetter[15]). sound: \\(self.sound[15]). english: \\(self.english[15]).  PhoneticValue: \\(self.PhoneticValue[15]).")\par
+        \}\par
+        if(letter.lowercaseString == "k")\{\par
+            println("Letter: \\(self.georgianLetter[9]). sound: \\(self.sound[9]). english: \\(self.english[9]).  PhoneticValue: \\(self.PhoneticValue[9]).")\par
+            println("Letter: \\(self.georgianLetter[23]). sound: \\(self.sound[23]). english: \\(self.english[23]).  PhoneticValue: \\(self.PhoneticValue[23]).")\par
+            println("Letter: \\(self.georgianLetter[30]). sound: \\(self.sound[30]). english: \\(self.english[30]).  PhoneticValue: \\(self.PhoneticValue[30]).")\par
+        \}\par
+        if(letter.lowercaseString == "t")\{\par
+            println("Letter: \\(self.georgianLetter[7]). sound: \\(self.sound[7]). english: \\(self.english[7]).  PhoneticValue: \\(self.PhoneticValue[7]).")\par
+            println("Letter: \\(self.georgianLetter[18]). sound: \\(self.sound[18]). english: \\(self.english[18]).  PhoneticValue: \\(self.PhoneticValue[18]).")\par
+            println("Letter: \\(self.georgianLetter[26]). sound: \\(self.sound[26]). english: \\(self.english[26]).  PhoneticValue: \\(self.PhoneticValue[26]).")\par
+            println("Letter: \\(self.georgianLetter[28]). sound: \\(self.sound[28]). english: \\(self.english[28]).  PhoneticValue: \\(self.PhoneticValue[28]).")\par
+            println("Letter: \\(self.georgianLetter[29]). sound: \\(self.sound[29]). english: \\(self.english[29]).  PhoneticValue: \\(self.PhoneticValue[29]).")\par
+        \}\par
+        var myString = "\\(m)"\par
+        if myString.rangeOfString("easy") != nil \{\par
+            println("Exists!")\par
+        \}\par
+        //println("Letter: \\(self.georgianLetter[m]). sound: \\(self.sound[m]). english: \\(self.english[m]).  PhoneticValue: \\(self.PhoneticValue[m]).")\par
+           \par
+   \}\par
+\par
+\}\par
+\par
+\par
+\par
+\par
+var p = Letters()\par
+\par
+//p.georgianLettersCorrespondsEnglish("t")\par
+//println(p.georgianLetterDiscription("\u4304?"))\par
+//for n in 0...32 \{\par
+//    println(p.georgianLetterDiscription(p.georgianLetter[n]))\par
+//\}\par
+//for n in p.georgianLetter\{\par
+   // println(p.georgianLetterDiscription(n))\par
+//\}\par
+println(p.getGeorgianVowels())\par
+\par
+println(p.getGeorgianConsonants())\lang9\f0\par
+}
+ 
