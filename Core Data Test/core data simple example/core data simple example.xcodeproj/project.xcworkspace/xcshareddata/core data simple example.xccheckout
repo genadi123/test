@@ -14,11 +14,11 @@
 		<string>https://github.com/genadi123/test.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>core data simple example/core data simple example.xcodeproj</string>
+	<string>Core Data Test/core data simple example/core data simple example.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>D02E4AFD993D56941116E22751F2644DCDD43489</key>
-		<string>../../..</string>
+		<string>../../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/genadi123/test.git</string>
