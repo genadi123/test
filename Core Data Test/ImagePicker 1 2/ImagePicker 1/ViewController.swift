@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import AssetsLibrary
+import CoreLocation
+import AddressBookUI
 
 class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate {
 
@@ -30,15 +33,44 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [NSObject : AnyObject]) {
         var chosenImage = info[UIImagePickerControllerOriginalImage] as UIImage
         myImageView.contentMode = .ScaleAspectFit
         myImageView.image = chosenImage
         //chosenImage.description
         dismissViewControllerAnimated(true, completion: nil)
+        
     }
+    
+    //   Get the city and region where the photo was taken.    
+    
+    /*
+    
+    
+    func imagePickerController(picker: UIImagePickerController!, didFinishPickingMediaWithInfo info: NSDictionary!){
+        let library = ALAssetsLibrary()
+        let URL: AnyObject? = info["UIImagePickerControllerReferenceURL"]
+        var error: NSError?
+        library.assetForURL(URL as NSURL, resultBlock: { (asset) -> Void in
+            let location = asset.valueForProperty(ALAssetPropertyLocation) as? CLLocation
+            let geocoder = CLGeocoder()
+            geocoder.reverseGeocodeLocation(location!) { (data, error) -> Void in
+                let address = data[0].addressDictionary!
+                let city = address[kABPersonAddressCityKey] as  NSString!
+                let state = address[kABPersonAddressStateKey] as  NSString!
+                println(city, state)
+            }
+            }) { (error) -> Void in
+                println(error)
+        }
+    }
+
+    */
+    
     func imagePickerControllerDidCancel(picker: UIImagePickerController) {
         dismissViewControllerAnimated(true, completion: nil)
     }
+    
 }
 
