@@ -39,6 +39,23 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
         myImageView.contentMode = .ScaleAspectFit
         myImageView.image = chosenImage
         //chosenImage.description
+        let library = ALAssetsLibrary()
+        var url: NSURL = info[UIImagePickerControllerReferenceURL] as NSURL   // (UIImagePickerControllerReferenceURL) as NSURL
+        
+        library.assetForURL(url, resultBlock: {
+            (asset: ALAsset!) in
+            if asset != nil {
+                
+                //print the creation date
+                println(asset.valueForProperty(ALAssetPropertyDate))
+                
+            }
+            }, failureBlock: {
+                (error: NSError!) in
+                
+                NSLog("Error!")
+            }
+        )
         dismissViewControllerAnimated(true, completion: nil)
         
     }
