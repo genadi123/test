@@ -17,6 +17,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        /* Save test Photo */
+        let entity = NSEntityDescription.entityForName("PhotoAntity",
+            inManagedObjectContext: managedObjectContext!)
+        let photoAntity = PhotoAntity(entity: entity!,
+            insertIntoManagedObjectContext: managedObjectContext)
+        photoAntity.name = "My photo"
+        photoAntity.lastSeen = NSDate()
+        managedObjectContext!.save(nil)
+        
+        /* Retrieve test Photo */
+        let request = NSFetchRequest(entityName: "PhotoAntity")
+        let photo =
+        managedObjectContext!.executeFetchRequest(request,
+            error: nil) as [PhotoAntity]
+        let sample = photo[0]
+        println("Name: \(sample.name), lastSeen: \(sample.lastSeen)")
+        
         return true
     }
 

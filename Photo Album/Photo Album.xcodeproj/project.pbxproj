@@ -14,6 +14,7 @@
 		E1963AE61A8CA4C4004CF0A9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1963AE51A8CA4C4004CF0A9 /* Images.xcassets */; };
 		E1963AE91A8CA4C4004CF0A9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1963AE71A8CA4C4004CF0A9 /* LaunchScreen.xib */; };
 		E1963AF51A8CA4C5004CF0A9 /* Photo_AlbumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1963AF41A8CA4C5004CF0A9 /* Photo_AlbumTests.swift */; };
+		E1A277C31A8CBD2A007D2297 /* PhotoAntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A277C21A8CBD2A007D2297 /* PhotoAntity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		E1963AEE1A8CA4C5004CF0A9 /* Photo AlbumTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Photo AlbumTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1963AF31A8CA4C5004CF0A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E1963AF41A8CA4C5004CF0A9 /* Photo_AlbumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo_AlbumTests.swift; sourceTree = "<group>"; };
+		E1A277C21A8CBD2A007D2297 /* PhotoAntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoAntity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 				E1963AE51A8CA4C4004CF0A9 /* Images.xcassets */,
 				E1963AE71A8CA4C4004CF0A9 /* LaunchScreen.xib */,
 				E1963ADD1A8CA4C4004CF0A9 /* Photo_Album.xcdatamodeld */,
+				E1A277C21A8CBD2A007D2297 /* PhotoAntity.swift */,
 				E1963AD91A8CA4C4004CF0A9 /* Supporting Files */,
 			);
 			path = "Photo Album";
@@ -218,6 +221,7 @@
 				E1963AE11A8CA4C4004CF0A9 /* ViewController.swift in Sources */,
 				E1963ADF1A8CA4C4004CF0A9 /* Photo_Album.xcdatamodeld in Sources */,
 				E1963ADC1A8CA4C4004CF0A9 /* AppDelegate.swift in Sources */,
+				E1A277C31A8CBD2A007D2297 /* PhotoAntity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +413,7 @@
 				E1963AFA1A8CA4C5004CF0A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E1963AFB1A8CA4C5004CF0A9 /* Build configuration list for PBXNativeTarget "Photo AlbumTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +422,7 @@
 				E1963AFD1A8CA4C5004CF0A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

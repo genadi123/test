@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6254" systemVersion="13F34" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <entity name="PhotoAntity" syncable="YES">
+    <entity name="PhotoAntity" representedClassName="Photo_Album.PhotoAntity" syncable="YES">
         <attribute name="createDate" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="discription" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="isFavorite" optional="YES" attributeType="Boolean" syncable="YES"/>
@@ -11,6 +11,6 @@
         <attribute name="searchKey" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="PhotoAntity" positionX="-63" positionY="-18" width="128" height="30"/>
+        <element name="PhotoAntity" positionX="-63" positionY="-18" width="128" height="165"/>
     </elements>
 </model>
