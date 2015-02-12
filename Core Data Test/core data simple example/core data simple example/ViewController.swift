@@ -10,7 +10,7 @@ import CoreData
 
 class ViewController: UIViewController, UITableViewDataSource{
     
-    //var names = [String]()
+    //var names = [String]()       
     var people = [NSManagedObject]()
     var fetch = false
     
