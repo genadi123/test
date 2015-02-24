@@ -12,14 +12,14 @@ import LocalAuthentication
 class ViewController: UIViewController {
 
     @IBAction func Authenticate(sender: AnyObject) {
-        // 1
+        
         let context = LAContext()
         var error: NSError?
         
-        // 2
+        
         // check if Touch ID is available
         if context.canEvaluatePolicy(.DeviceOwnerAuthenticationWithBiometrics, error: &error) {
-            // 3
+            
             let reason = "Authenticate with Touch ID"
             context.evaluatePolicy(.DeviceOwnerAuthenticationWithBiometrics, localizedReason: reason, reply:
                 {(succes: Bool, error: NSError!) in
@@ -32,10 +32,11 @@ class ViewController: UIViewController {
                     }
             })
         }
-            // 5
+           
         else {
             showAlertController("Simply Touch ID not available :-)")
-        }    }
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
