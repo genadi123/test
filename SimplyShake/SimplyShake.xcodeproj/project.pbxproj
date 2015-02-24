@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E1F444881A9D0CFF000DC859 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F444871A9D0CFF000DC859 /* AppDelegate.swift */; };
+		E1F4448A1A9D0CFF000DC859 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F444891A9D0CFF000DC859 /* ViewController.swift */; };
+		E1F4448D1A9D0CFF000DC859 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1F4448B1A9D0CFF000DC859 /* Main.storyboard */; };
+		E1F4448F1A9D0CFF000DC859 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1F4448E1A9D0CFF000DC859 /* Images.xcassets */; };
+		E1F444921A9D0CFF000DC859 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1F444901A9D0CFF000DC859 /* LaunchScreen.xib */; };
+		E1F4449E1A9D0D00000DC859 /* SimplyShakeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F4449D1A9D0D00000DC859 /* SimplyShakeTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E1F444981A9D0CFF000DC859 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1F4447A1A9D0CFE000DC859 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E1F444811A9D0CFE000DC859;
+			remoteInfo = SimplyShake;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E1F444821A9D0CFE000DC859 /* SimplyShake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimplyShake.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1F444861A9D0CFF000DC859 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1F444871A9D0CFF000DC859 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E1F444891A9D0CFF000DC859 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E1F4448C1A9D0CFF000DC859 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E1F4448E1A9D0CFF000DC859 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E1F444911A9D0CFF000DC859 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		E1F444971A9D0CFF000DC859 /* SimplyShakeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimplyShakeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1F4449C1A9D0CFF000DC859 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1F4449D1A9D0D00000DC859 /* SimplyShakeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplyShakeTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E1F4447F1A9D0CFE000DC859 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1F444941A9D0CFF000DC859 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E1F444791A9D0CFE000DC859 = {
+			isa = PBXGroup;
+			children = (
+				E1F444841A9D0CFE000DC859 /* SimplyShake */,
+				E1F4449A1A9D0CFF000DC859 /* SimplyShakeTests */,
+				E1F444831A9D0CFE000DC859 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E1F444831A9D0CFE000DC859 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E1F444821A9D0CFE000DC859 /* SimplyShake.app */,
+				E1F444971A9D0CFF000DC859 /* SimplyShakeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E1F444841A9D0CFE000DC859 /* SimplyShake */ = {
+			isa = PBXGroup;
+			children = (
+				E1F444871A9D0CFF000DC859 /* AppDelegate.swift */,
+				E1F444891A9D0CFF000DC859 /* ViewController.swift */,
+				E1F4448B1A9D0CFF000DC859 /* Main.storyboard */,
+				E1F4448E1A9D0CFF000DC859 /* Images.xcassets */,
+				E1F444901A9D0CFF000DC859 /* LaunchScreen.xib */,
+				E1F444851A9D0CFE000DC859 /* Supporting Files */,
+			);
+			path = SimplyShake;
+			sourceTree = "<group>";
+		};
+		E1F444851A9D0CFE000DC859 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E1F444861A9D0CFF000DC859 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E1F4449A1A9D0CFF000DC859 /* SimplyShakeTests */ = {
+			isa = PBXGroup;
+			children = (
+				E1F4449D1A9D0D00000DC859 /* SimplyShakeTests.swift */,
+				E1F4449B1A9D0CFF000DC859 /* Supporting Files */,
+			);
+			path = SimplyShakeTests;
+			sourceTree = "<group>";
+		};
+		E1F4449B1A9D0CFF000DC859 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E1F4449C1A9D0CFF000DC859 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E1F444811A9D0CFE000DC859 /* SimplyShake */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1F444A11A9D0D00000DC859 /* Build configuration list for PBXNativeTarget "SimplyShake" */;
+			buildPhases = (
+				E1F4447E1A9D0CFE000DC859 /* Sources */,
+				E1F4447F1A9D0CFE000DC859 /* Frameworks */,
+				E1F444801A9D0CFE000DC859 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimplyShake;
+			productName = SimplyShake;
+			productReference = E1F444821A9D0CFE000DC859 /* SimplyShake.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E1F444961A9D0CFF000DC859 /* SimplyShakeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1F444A41A9D0D00000DC859 /* Build configuration list for PBXNativeTarget "SimplyShakeTests" */;
+			buildPhases = (
+				E1F444931A9D0CFF000DC859 /* Sources */,
+				E1F444941A9D0CFF000DC859 /* Frameworks */,
+				E1F444951A9D0CFF000DC859 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E1F444991A9D0CFF000DC859 /* PBXTargetDependency */,
+			);
+			name = SimplyShakeTests;
+			productName = SimplyShakeTests;
+			productReference = E1F444971A9D0CFF000DC859 /* SimplyShakeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E1F4447A1A9D0CFE000DC859 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Genadi Betsuashvili";
+				TargetAttributes = {
+					E1F444811A9D0CFE000DC859 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					E1F444961A9D0CFF000DC859 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = E1F444811A9D0CFE000DC859;
+					};
+				};
+			};
+			buildConfigurationList = E1F4447D1A9D0CFE000DC859 /* Build configuration list for PBXProject "SimplyShake" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E1F444791A9D0CFE000DC859;
+			productRefGroup = E1F444831A9D0CFE000DC859 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E1F444811A9D0CFE000DC859 /* SimplyShake */,
+				E1F444961A9D0CFF000DC859 /* SimplyShakeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E1F444801A9D0CFE000DC859 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1F4448D1A9D0CFF000DC859 /* Main.storyboard in Resources */,
+				E1F444921A9D0CFF000DC859 /* LaunchScreen.xib in Resources */,
+				E1F4448F1A9D0CFF000DC859 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1F444951A9D0CFF000DC859 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E1F4447E1A9D0CFE000DC859 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1F4448A1A9D0CFF000DC859 /* ViewController.swift in Sources */,
+				E1F444881A9D0CFF000DC859 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1F444931A9D0CFF000DC859 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1F4449E1A9D0D00000DC859 /* SimplyShakeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E1F444991A9D0CFF000DC859 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E1F444811A9D0CFE000DC859 /* SimplyShake */;
+			targetProxy = E1F444981A9D0CFF000DC859 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E1F4448B1A9D0CFF000DC859 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E1F4448C1A9D0CFF000DC859 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E1F444901A9D0CFF000DC859 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E1F444911A9D0CFF000DC859 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E1F4449F1A9D0D00000DC859 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E1F444A01A9D0D00000DC859 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E1F444A21A9D0D00000DC859 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SimplyShake/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E1F444A31A9D0D00000DC859 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SimplyShake/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E1F444A51A9D0D00000DC859 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SimplyShakeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimplyShake.app/SimplyShake";
+			};
+			name = Debug;
+		};
+		E1F444A61A9D0D00000DC859 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SimplyShakeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimplyShake.app/SimplyShake";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E1F4447D1A9D0CFE000DC859 /* Build configuration list for PBXProject "SimplyShake" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1F4449F1A9D0D00000DC859 /* Debug */,
+				E1F444A01A9D0D00000DC859 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1F444A11A9D0D00000DC859 /* Build configuration list for PBXNativeTarget "SimplyShake" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1F444A21A9D0D00000DC859 /* Debug */,
+				E1F444A31A9D0D00000DC859 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E1F444A41A9D0D00000DC859 /* Build configuration list for PBXNativeTarget "SimplyShakeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1F444A51A9D0D00000DC859 /* Debug */,
+				E1F444A61A9D0D00000DC859 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E1F4447A1A9D0CFE000DC859 /* Project object */;
+}
