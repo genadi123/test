@@ -23,7 +23,7 @@ class ViewController: UIViewController {
             let reason = "Authenticate with Touch ID"
             context.evaluatePolicy(.DeviceOwnerAuthenticationWithBiometrics, localizedReason: reason, reply:
                 {(succes: Bool, error: NSError!) in
-                    // 4
+                    
                     if succes {
                         self.showAlertController("Touch ID Authentication Succeeded")
                     }
