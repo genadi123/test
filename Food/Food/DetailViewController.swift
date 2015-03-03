@@ -76,5 +76,13 @@ class DetailViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        if segue.identifier == "showMap" {
+            let destinationController = segue.destinationViewController as MapViewController
+            destinationController.food = food
+        }
+        
+    }
 
 }
