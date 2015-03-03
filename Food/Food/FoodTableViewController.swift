@@ -97,34 +97,34 @@ class FoodTableViewController: UITableViewController, NSFetchedResultsController
             return cell
     }
 
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath:
-        NSIndexPath) {
-            // Create an option menu as an action sheet
-            let optionMenu = UIAlertController(title: nil, message: "?",
-                preferredStyle: .ActionSheet)
-            // Add actions to the menu
-            let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel, handler: nil)
-            optionMenu.addAction(cancelAction)
-            // Display the menu
-            self.presentViewController(optionMenu, animated: true, completion: nil)
-            
-            let callActionHandler = { (action:UIAlertAction!) -> Void in
-                let alertMessage = UIAlertController(title: "Service Unavailable", message: "Sorry, the call feature is not available yet. Please retry later.", preferredStyle: .Alert)
-                alertMessage.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
-                self.presentViewController(alertMessage, animated: true, completion: nil)
-            }
-            
-            let callAction = UIAlertAction(title: "Call " + "599-232-32\(indexPath.row)", style:
-                UIAlertActionStyle.Default, handler: callActionHandler)
-            
-            let isVisitedAction = UIAlertAction(title: "I've been here", style: .Default, handler: {
-                (action:UIAlertAction!) -> Void in
-                let cell = tableView.cellForRowAtIndexPath(indexPath)
-                cell?.accessoryType = .Checkmark
-            })
-            
-            optionMenu.addAction(callAction)
-    }
+//    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath:
+//        NSIndexPath) {
+//            // Create an option menu as an action sheet
+//            let optionMenu = UIAlertController(title: nil, message: "?",
+//                preferredStyle: .ActionSheet)
+//            // Add actions to the menu
+//            let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel, handler: nil)
+//            optionMenu.addAction(cancelAction)
+//            // Display the menu
+//            self.presentViewController(optionMenu, animated: true, completion: nil)
+//            
+//            let callActionHandler = { (action:UIAlertAction!) -> Void in
+//                let alertMessage = UIAlertController(title: "Service Unavailable", message: "Sorry, the call feature is not available yet. Please retry later.", preferredStyle: .Alert)
+//                alertMessage.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+//                self.presentViewController(alertMessage, animated: true, completion: nil)
+//            }
+//            
+//            let callAction = UIAlertAction(title: "Call " + "599-232-32\(indexPath.row)", style:
+//                UIAlertActionStyle.Default, handler: callActionHandler)
+//            
+//            let isVisitedAction = UIAlertAction(title: "I've been here", style: .Default, handler: {
+//                (action:UIAlertAction!) -> Void in
+//                let cell = tableView.cellForRowAtIndexPath(indexPath)
+//                cell?.accessoryType = .Checkmark
+//            })
+//            
+//            optionMenu.addAction(callAction)
+//    }
     
     override func tableView(tableView: UITableView, commitEditingStyle editingStyle:
         UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
