@@ -12,6 +12,8 @@ class DetailViewController: UIViewController {
 
     @IBOutlet weak var foodImageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var locationLabel: UILabel!
+    @IBOutlet weak var phoneLabel: UILabel!
     
 //    var foodImage : String!
 //    var foodName : String!
@@ -29,6 +31,8 @@ class DetailViewController: UIViewController {
         
         self.foodImageView.image = UIImage(data: food.image)
         self.nameLabel.text = food.name
+        self.locationLabel.text = food.location
+        self.phoneLabel.text = food.type
         //        self.foodImageView.image = UIImage(named: foodImage)
         //        self.nameLabel.text = foodName  
         
@@ -47,7 +51,7 @@ class DetailViewController: UIViewController {
             self.presentViewController(alertMessage, animated: true, completion: nil)
         }
         
-        let callAction = UIAlertAction(title: "Call " + "599-232-327", style:
+        let callAction = UIAlertAction(title: "Call " + food.type, style:
             UIAlertActionStyle.Default, handler: callActionHandler)
         
 //        let isVisitedAction = UIAlertAction(title: "I've been here", style: .Default, handler: {

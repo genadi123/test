@@ -15,6 +15,8 @@ UINavigationControllerDelegate {
 
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var locationTextField: UITextField!
+    @IBOutlet weak var phoneTextField: UITextField!
     
     var food : FoodEntity!
     
@@ -63,6 +65,10 @@ UINavigationControllerDelegate {
         
         if nameTextField.text == "" {
             errorField = "name"
+        } else if locationTextField.text == "" {
+            errorField = "location"
+        } else if phoneTextField.text == "" {
+            errorField = "type"
         }
         
         if errorField != "" {
@@ -82,6 +88,8 @@ UINavigationControllerDelegate {
             food = NSEntityDescription.insertNewObjectForEntityForName("FoodEntity",
                 inManagedObjectContext: managedObjectContext) as FoodEntity
             food.name = nameTextField.text
+            food.location = locationTextField.text
+            food.type = phoneTextField.text
             food.image = UIImagePNGRepresentation(imageView.image)
             
             var e: NSError?

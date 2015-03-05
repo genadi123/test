@@ -28,7 +28,7 @@ class MapViewController: UIViewController, MKMapViewDelegate {
 //                return
 //            }
         
-        geoCoder.geocodeAddressString("Tbilisi", completionHandler: { placemarks, error in
+        geoCoder.geocodeAddressString(food.location, completionHandler: { placemarks, error in
             if error != nil {
                 println(error)
                 return
