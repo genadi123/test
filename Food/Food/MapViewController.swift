@@ -10,14 +10,19 @@ import UIKit
 import MapKit
 
 class MapViewController: UIViewController, MKMapViewDelegate {
+<<<<<<< HEAD
     
     var locationManager = CLLocationManager()
+=======
+
+>>>>>>> FETCH_HEAD
     @IBOutlet weak var mapView: MKMapView!
     var food : FoodEntity!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+<<<<<<< HEAD
         locationManager.requestWhenInUseAuthorization()
         mapView.delegate = self
         
@@ -25,6 +30,11 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         
         
         
+=======
+        mapView.delegate = self
+        
+        title = self.food.name
+>>>>>>> FETCH_HEAD
         // Convert address to coordinate and annotate it on map
         let geoCoder = CLGeocoder()
 //        geoCoder.geocodeAddressString(food.location, completionHandler: { placemarks, error in

@@ -12,14 +12,19 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="65" sectionHeaderHeight="22" sectionFooterHeight="22" id="phu-LB-VR6">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+<<<<<<< HEAD
                         <color key="backgroundColor" red="0.66742217599999998" green="0.80988875680000005" blue="0.63884047759999996" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="separatorColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+=======
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+>>>>>>> FETCH_HEAD
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="60" id="zcd-yH-Gh9" customClass="CustomTableViewCell" customModule="Food" customModuleProvider="target">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zcd-yH-Gh9" id="g1S-tH-tca">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
+<<<<<<< HEAD
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qkM-dZ-J3t">
                                             <rect key="frame" x="13" y="4" width="55" height="55"/>
                                             <constraints>
@@ -38,11 +43,19 @@
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yQK-f5-z1x">
                                             <rect key="frame" x="89" y="34" width="483" height="21"/>
+=======
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qkM-dZ-J3t">
+                                            <rect key="frame" x="13" y="4" width="55" height="55"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WhF-aA-ye7">
+                                            <rect key="frame" x="91" y="19" width="179" height="24"/>
+>>>>>>> FETCH_HEAD
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+<<<<<<< HEAD
                                     <constraints>
                                         <constraint firstItem="WhF-aA-ye7" firstAttribute="leading" secondItem="qkM-dZ-J3t" secondAttribute="trailing" constant="21" id="IMy-sX-uG2"/>
                                         <constraint firstItem="yQK-f5-z1x" firstAttribute="leading" secondItem="qkM-dZ-J3t" secondAttribute="trailing" constant="21" id="PSh-Am-2VM"/>
@@ -58,6 +71,11 @@
                                 <connections>
                                     <outlet property="cellImageView" destination="qkM-dZ-J3t" id="jmD-Av-C0Y"/>
                                     <outlet property="locationLabel" destination="yQK-f5-z1x" id="dON-q4-Og9"/>
+=======
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="cellImageView" destination="qkM-dZ-J3t" id="jmD-Av-C0Y"/>
+>>>>>>> FETCH_HEAD
                                     <outlet property="nameLabel" destination="WhF-aA-ye7" id="bsB-Bp-QyF"/>
                                     <segue destination="oU4-YS-dUd" kind="show" identifier="showFoodDetail" id="v20-mX-bwa"/>
                                 </connections>
@@ -78,7 +96,11 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iWo-C3-Epn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+<<<<<<< HEAD
             <point key="canvasLocation" x="2112" y="144"/>
+=======
+            <point key="canvasLocation" x="2112" y="146"/>
+>>>>>>> FETCH_HEAD
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="xZW-xS-8kV">
@@ -111,21 +133,36 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9dJ-hM-kNY">
+<<<<<<< HEAD
                                 <rect key="frame" x="0.0" y="556" width="600" height="44"/>
                                 <items>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="arm-im-dqZ"/>
                                     <barButtonItem systemItem="action" id="bbi-I4-DBA">
+=======
+                                <rect key="frame" x="16" y="556" width="568" height="44"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="arm-im-dqZ"/>
+                                    <barButtonItem systemItem="compose" id="bbi-I4-DBA">
+>>>>>>> FETCH_HEAD
                                         <connections>
                                             <segue destination="Bdv-Ot-p0s" kind="modal" identifier="showReview" id="Y5A-k5-1dw"/>
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="ghJ-Hd-9C5"/>
                                 </items>
+<<<<<<< HEAD
                                 <color key="barTintColor" red="0.32914067679999998" green="0.5" blue="0.27526843569999998" alpha="1" colorSpace="calibratedRGB"/>
                             </toolbar>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jwO-8g-eu6">
                                 <rect key="frame" x="265" y="518" width="71" height="30"/>
                                 <color key="backgroundColor" red="0.15323340339244684" green="0.47887652853260865" blue="0.22555164109097753" alpha="1" colorSpace="calibratedRGB"/>
+=======
+                                <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </toolbar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jwO-8g-eu6">
+                                <rect key="frame" x="265" y="496" width="71" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+>>>>>>> FETCH_HEAD
                                 <constraints>
                                     <constraint firstAttribute="width" constant="71" id="67S-9D-sal"/>
                                     <constraint firstAttribute="height" constant="30" id="aHv-5I-RbH"/>
@@ -139,6 +176,15 @@
                                     <segue destination="KjO-ed-CqX" kind="push" identifier="showMap" id="M5b-X7-x3W"/>
                                 </connections>
                             </button>
+<<<<<<< HEAD
+=======
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KIs-J9-ayo">
+                                <rect key="frame" x="16" y="64" width="568" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="bs7-vf-AHI"/>
+                                </constraints>
+                            </imageView>
+>>>>>>> FETCH_HEAD
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UGg-9B-tpt">
                                 <rect key="frame" x="66" y="386" width="468" height="21"/>
                                 <constraints>
@@ -148,6 +194,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+<<<<<<< HEAD
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KIs-J9-ayo">
                                 <rect key="frame" x="16" y="64" width="568" height="250"/>
                                 <constraints>
@@ -158,13 +205,23 @@
                         <color key="backgroundColor" red="0.66742217599999998" green="0.80988875680000005" blue="0.63884047759999996" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="9dJ-hM-kNY" firstAttribute="leading" secondItem="flO-ws-cG9" secondAttribute="leadingMargin" constant="-16" id="4Rd-cg-wQQ"/>
+=======
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9dJ-hM-kNY" firstAttribute="leading" secondItem="flO-ws-cG9" secondAttribute="leadingMargin" id="4Rd-cg-wQQ"/>
+>>>>>>> FETCH_HEAD
                             <constraint firstItem="x8f-BP-CcP" firstAttribute="top" secondItem="KIs-J9-ayo" secondAttribute="bottom" constant="10" id="5rl-bT-eoY"/>
                             <constraint firstAttribute="centerX" secondItem="jwO-8g-eu6" secondAttribute="centerX" id="74O-cI-k4t"/>
                             <constraint firstAttribute="trailingMargin" secondItem="jrG-6p-kyE" secondAttribute="trailing" constant="50" id="794-7L-3lZ"/>
                             <constraint firstItem="jrG-6p-kyE" firstAttribute="leading" secondItem="flO-ws-cG9" secondAttribute="leadingMargin" constant="50" id="DqN-bJ-30c"/>
                             <constraint firstItem="jrG-6p-kyE" firstAttribute="top" secondItem="x8f-BP-CcP" secondAttribute="bottom" constant="8" id="Ics-HW-xWT"/>
                             <constraint firstItem="UGg-9B-tpt" firstAttribute="leading" secondItem="flO-ws-cG9" secondAttribute="leadingMargin" constant="50" id="K02-fM-JRh"/>
+<<<<<<< HEAD
                             <constraint firstAttribute="trailingMargin" secondItem="9dJ-hM-kNY" secondAttribute="trailing" constant="-16" id="MMj-ax-xt7"/>
+=======
+                            <constraint firstAttribute="trailingMargin" secondItem="9dJ-hM-kNY" secondAttribute="trailing" id="MMj-ax-xt7"/>
+>>>>>>> FETCH_HEAD
                             <constraint firstAttribute="trailingMargin" secondItem="KIs-J9-ayo" secondAttribute="trailing" id="cMR-iK-enS"/>
                             <constraint firstItem="SRM-lB-Plx" firstAttribute="top" secondItem="9dJ-hM-kNY" secondAttribute="bottom" id="dlP-st-spv"/>
                             <constraint firstItem="KIs-J9-ayo" firstAttribute="leading" secondItem="flO-ws-cG9" secondAttribute="leadingMargin" id="gBm-KF-sHG"/>
@@ -173,7 +230,11 @@
                             <constraint firstItem="KIs-J9-ayo" firstAttribute="top" secondItem="hTE-Lx-xqu" secondAttribute="bottom" id="u2Q-H3-hfB"/>
                             <constraint firstItem="x8f-BP-CcP" firstAttribute="leading" secondItem="flO-ws-cG9" secondAttribute="leadingMargin" constant="50" id="ui2-fa-FxX"/>
                             <constraint firstAttribute="trailingMargin" secondItem="UGg-9B-tpt" secondAttribute="trailing" constant="50" id="vVZ-cd-JKF"/>
+<<<<<<< HEAD
                             <constraint firstItem="9dJ-hM-kNY" firstAttribute="top" secondItem="jwO-8g-eu6" secondAttribute="bottom" constant="8" id="y0n-45-32q"/>
+=======
+                            <constraint firstItem="9dJ-hM-kNY" firstAttribute="top" secondItem="jwO-8g-eu6" secondAttribute="bottom" constant="30" id="y0n-45-32q"/>
+>>>>>>> FETCH_HEAD
                         </constraints>
                     </view>
                     <connections>
@@ -272,8 +333,12 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="biJ-uS-0ub">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+<<<<<<< HEAD
                         <color key="backgroundColor" red="0.66742217599999998" green="0.80988875680000005" blue="0.63884047759999996" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="separatorColor" red="0.66742217599999998" green="0.80988875680000005" blue="0.63884047759999996" alpha="1" colorSpace="calibratedRGB"/>
+=======
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+>>>>>>> FETCH_HEAD
                         <sections>
                             <tableViewSection id="6Lt-GN-got">
                                 <cells>
@@ -284,7 +349,10 @@
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="camera" translatesAutoresizingMaskIntoConstraints="NO" id="anu-wV-G8q">
                                                     <rect key="frame" x="0.0" y="0.0" width="600" height="249"/>
+<<<<<<< HEAD
                                                     <color key="backgroundColor" red="0.32914067679999998" green="0.5" blue="0.27526843569999998" alpha="1" colorSpace="calibratedRGB"/>
+=======
+>>>>>>> FETCH_HEAD
                                                 </imageView>
                                             </subviews>
                                             <constraints>
@@ -300,6 +368,14 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sJJ-fk-0ne" id="uBl-yn-fQv">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
+<<<<<<< HEAD
+=======
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Food Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Cp-hm-xxN">
+                                                    <rect key="frame" x="38" y="36" width="524" height="30"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+>>>>>>> FETCH_HEAD
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZFW-Iu-j19">
                                                     <rect key="frame" x="38" y="8" width="46" height="20"/>
                                                     <constraints>
@@ -309,12 +385,15 @@
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+<<<<<<< HEAD
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Food Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Cp-hm-xxN">
                                                     <rect key="frame" x="38" y="36" width="524" height="30"/>
                                                     <color key="backgroundColor" red="0.88637799203156864" green="0.98352581521739135" blue="0.85601069647712624" alpha="1" colorSpace="calibratedRGB"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
+=======
+>>>>>>> FETCH_HEAD
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="ZFW-Iu-j19" firstAttribute="top" secondItem="uBl-yn-fQv" secondAttribute="topMargin" id="Fzh-sx-ryk"/>
@@ -324,13 +403,24 @@
                                                 <constraint firstItem="7Cp-hm-xxN" firstAttribute="top" secondItem="ZFW-Iu-j19" secondAttribute="bottom" constant="8" id="wlm-3h-y3e"/>
                                             </constraints>
                                         </tableViewCellContentView>
+<<<<<<< HEAD
                                         <color key="backgroundColor" red="0.66742217599999998" green="0.80988875680000005" blue="0.63884047759999996" alpha="1" colorSpace="calibratedRGB"/>
+=======
+>>>>>>> FETCH_HEAD
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="70" id="y2c-nH-HDe">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="y2c-nH-HDe" id="PP7-O1-Ftg">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
+<<<<<<< HEAD
+=======
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ELS-08-7Mh">
+                                                    <rect key="frame" x="38" y="38" width="524" height="30"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+>>>>>>> FETCH_HEAD
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kU8-X1-vLx">
                                                     <rect key="frame" x="38" y="10" width="67" height="20"/>
                                                     <constraints>
@@ -340,12 +430,15 @@
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+<<<<<<< HEAD
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ELS-08-7Mh">
                                                     <rect key="frame" x="38" y="38" width="524" height="30"/>
                                                     <color key="backgroundColor" red="0.886377992" green="0.98352581520000004" blue="0.85601069649999995" alpha="1" colorSpace="calibratedRGB"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
+=======
+>>>>>>> FETCH_HEAD
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="ELS-08-7Mh" firstAttribute="leading" secondItem="PP7-O1-Ftg" secondAttribute="leadingMargin" constant="30" id="Bfo-rM-MWN"/>
@@ -355,13 +448,24 @@
                                                 <constraint firstItem="ELS-08-7Mh" firstAttribute="top" secondItem="kU8-X1-vLx" secondAttribute="bottom" constant="8" id="mRE-s2-NOH"/>
                                             </constraints>
                                         </tableViewCellContentView>
+<<<<<<< HEAD
                                         <color key="backgroundColor" red="0.66742217599999998" green="0.80988875680000005" blue="0.63884047759999996" alpha="1" colorSpace="calibratedRGB"/>
+=======
+>>>>>>> FETCH_HEAD
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="70" id="OB4-VU-CP2">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="OB4-VU-CP2" id="XSB-mz-gxW">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
+<<<<<<< HEAD
+=======
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2dH-B7-ASX">
+                                                    <rect key="frame" x="38" y="36" width="524" height="30"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+>>>>>>> FETCH_HEAD
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pJf-nT-nk1">
                                                     <rect key="frame" x="38" y="8" width="50" height="20"/>
                                                     <constraints>
@@ -372,6 +476,7 @@
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+<<<<<<< HEAD
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2dH-B7-ASX">
                                                     <rect key="frame" x="38" y="36" width="524" height="30"/>
                                                     <color key="backgroundColor" red="0.886377992" green="0.98352581520000004" blue="0.85601069649999995" alpha="1" colorSpace="calibratedRGB"/>
@@ -380,6 +485,9 @@
                                                 </textField>
                                             </subviews>
                                             <color key="backgroundColor" red="0.66742217599999998" green="0.80988875680000005" blue="0.63884047759999996" alpha="1" colorSpace="calibratedRGB"/>
+=======
+                                            </subviews>
+>>>>>>> FETCH_HEAD
                                             <constraints>
                                                 <constraint firstItem="pJf-nT-nk1" firstAttribute="top" secondItem="XSB-mz-gxW" secondAttribute="topMargin" id="GEp-ER-XkD"/>
                                                 <constraint firstItem="pJf-nT-nk1" firstAttribute="leading" secondItem="XSB-mz-gxW" secondAttribute="leadingMargin" constant="30" id="Sne-Tm-5ga"/>
@@ -394,7 +502,10 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vJ5-VO-tpi" id="u92-lm-Mop">
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
+<<<<<<< HEAD
                                         <color key="backgroundColor" red="0.66742217599999998" green="0.80988875680000005" blue="0.63884047759999996" alpha="1" colorSpace="calibratedRGB"/>
+=======
+>>>>>>> FETCH_HEAD
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -405,7 +516,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="New Food" id="4M8-sI-gvm">
+<<<<<<< HEAD
                         <barButtonItem key="leftBarButtonItem" systemItem="done" id="BsH-6i-23z">
+=======
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="BsH-6i-23z">
+>>>>>>> FETCH_HEAD
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             <connections>
                                 <segue destination="MB5-7w-mgn" kind="unwind" unwindAction="unwindToHomeScreen:" id="R0B-Gv-wnr"/>

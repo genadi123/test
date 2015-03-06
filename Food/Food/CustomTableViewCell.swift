@@ -15,7 +15,10 @@ class CustomTableViewCell: UITableViewCell {
     
     @IBOutlet weak var cellImageView: UIImageView!
     
+<<<<<<< HEAD
     @IBOutlet weak var locationLabel: UILabel!
+=======
+>>>>>>> FETCH_HEAD
    
     
     override func awakeFromNib() {

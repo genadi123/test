@@ -25,7 +25,11 @@ class FoodTableViewController: UITableViewController, NSFetchedResultsController
         super.viewDidLoad()
         
 
+<<<<<<< HEAD
         // Retrieve content from Food store
+=======
+        // Retrieve content from persistent store
+>>>>>>> FETCH_HEAD
         var fetchRequest = NSFetchRequest(entityName: "FoodEntity")
         let sortDescriptor = NSSortDescriptor(key: "name", ascending: true)
         fetchRequest.sortDescriptors = [sortDescriptor]
@@ -79,7 +83,10 @@ class FoodTableViewController: UITableViewController, NSFetchedResultsController
             let food = foods[indexPath.row]
             
             cell.nameLabel.text = food.name
+<<<<<<< HEAD
             cell.locationLabel.text = food.location
+=======
+>>>>>>> FETCH_HEAD
             cell.cellImageView?.image = UIImage(data: food.image)
             
             //cell.cellImageView?.image = UIImage(named: food.image)
